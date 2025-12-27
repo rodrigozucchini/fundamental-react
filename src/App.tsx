@@ -28,26 +28,10 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-      <TodoCount completed={3} total={3} />
-      <TodoItem />
     </>
   )
 }
 
-function TodoCount (props: { completed: number, total: number }) {
-  return (
-    <>
-    <p>Completaste {props.completed} de {props.total}</p>
-    </>
-  )
-}
 
-function TodoItem () {
-  return (
-    <>
-    <p>alsdlad</p>
-    </>
-  )
-}
 
 export default App
