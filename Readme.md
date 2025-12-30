@@ -1,4 +1,6 @@
-# ⚛️ React – Key Concepts
+# Guide with the first concept in REACT
+
+# ⚛️
 
 1. Components
 2. JSX
