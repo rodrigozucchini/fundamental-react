@@ -11,6 +11,8 @@
 ##### https://ro-zcn.medium.com/props-in-react-feae62a939b7
 
 5. State (useState)
+##### https://ro-zcn.medium.com/what-is-the-state-in-react-especially-use-state-69c89c020414
+
 6. Events
 ##### https://ro-zcn.medium.com/what-are-events-in-react-b1abade73d45
 
