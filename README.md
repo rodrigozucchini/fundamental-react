@@ -20,6 +20,7 @@
 ##### https://ro-zcn.medium.com/what-are-events-in-react-b1abade73d45
 
 7. Effects (useEffect)
+#####
 8. Controlled Components
 9. React Context
 10. Portals
