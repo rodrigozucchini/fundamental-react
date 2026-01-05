@@ -21,9 +21,13 @@
 
 7. Effects (useEffect)
 ##### https://ro-zcn.medium.com/hook-useeffect-in-react-842a6d7142d9
-8. Controlled Components
-9. React Context
-10. Portals
+
+8. Custom Hook
+
+
+Controlled Components
+React Context
+Portals
 
 
 ### Follow the README, into SRC add the explanation step by step.
