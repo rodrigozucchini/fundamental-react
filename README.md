@@ -1,398 +1,355 @@
-⚛️ Complete React Roadmap
-Fundamentals → Patterns → Advanced Architecture
+# ⚛️ Complete React Roadmap
 
-This repository is a complete and structured React learning path, combining:
+A structured and complete learning path covering React fundamentals, advanced patterns, performance optimization, and modern architecture.
 
-Your published articles
+---
 
-Core React fundamentals
+## 📌 About This Repository
 
-Advanced composition patterns
+This repository documents a complete React journey — from core concepts to advanced architectural patterns.
 
-Modern React 18+ features
+Each topic is implemented step by step inside the `/src` folder with:
 
-Architecture and scalability concepts
+- Practical examples
+- TypeScript usage (when applicable)
+- Clean separation of concerns
+- Progressive complexity
 
-All topics are implemented step by step inside /src.
+---
 
-🧱 PART 1 — Core Fundamentals
-1️⃣ Components, JSX & Virtual DOM
+# 🧱 1. Core Fundamentals
 
-Functional components
+## 1.1 Components, JSX & Virtual DOM
 
-JSX syntax and expressions
+- Functional Components
+- JSX syntax
+- Elements vs Components
+- Virtual DOM
+- Reconciliation
+- Rendering lifecycle
 
-Elements vs Components
-
-Virtual DOM
-
-Reconciliation process
-
-Rendering lifecycle
-
-🔗 Article:
+🔗 Article  
 https://ro-zcn.medium.com/react-fundamentals-components-elements-jsx-and-virtual-dom-534254015cb1
 
-2️⃣ Props
+---
 
-Passing data between components
+## 1.2 Props
 
-Props immutability
+- Immutable data flow
+- Props typing (TypeScript)
+- Default values
+- `children` as a prop
+- Composition through props
 
-Props typing with TypeScript
-
-Default props
-
-Children as props
-
-🔗 Article:
+🔗 Article  
 https://ro-zcn.medium.com/props-in-react-feae62a939b7
 
-3️⃣ State — useState
-Local State
+---
 
-What state is
+## 1.3 State — useState
 
-Functional updates
+### Local State
 
-Derived state
+- Functional updates
+- Derived state
+- Lazy initialization
 
-Lazy initialization
-
-🔗 Article:
+🔗 Article  
 https://ro-zcn.medium.com/what-is-the-state-in-react-especially-use-state-69c89c020414
 
-Shared State (Parent → Children)
+### Shared State (Parent → Children)
 
-Lifting state up
+- Lifting state up
+- Single source of truth
+- Controlled data flow
 
-Single source of truth
-
-Controlled data flow
-
-🔗 Article:
+🔗 Article  
 https://ro-zcn.medium.com/father-to-children-usestate-react-with-typescript-9e430f37d1e3
 
-4️⃣ Events
+---
 
-Synthetic events
+## 1.4 Events
 
-Event handling
+- Synthetic events
+- Event handling
+- Passing parameters
+- TypeScript event types
 
-Passing arguments
-
-TypeScript event types
-
-🔗 Article:
+🔗 Article  
 https://ro-zcn.medium.com/what-are-events-in-react-b1abade73d45
 
-5️⃣ Effects — useEffect
+---
 
-Side effects
+## 1.5 Effects — useEffect
 
-Dependency array
+- Side effects
+- Dependency array
+- Cleanup functions
+- Avoiding infinite loops
+- Common mistakes
 
-Cleanup functions
-
-Avoiding infinite loops
-
-Common mistakes
-
-🔗 Article:
+🔗 Article  
 https://ro-zcn.medium.com/hook-useeffect-in-react-842a6d7142d9
 
-6️⃣ Custom Hooks
+---
 
-Extracting reusable logic
+## 1.6 Custom Hooks
 
-Hook composition
+- Extracting reusable logic
+- Hook composition
+- Naming conventions
+- Separation of UI and logic
 
-Naming conventions
-
-Separation of UI and logic
-
-🔗 Article:
+🔗 Article  
 https://ro-zcn.medium.com/custom-hook-a-hook-created-by-yourself-react-3f502c315329
 
-7️⃣ useContext & Context API
+---
 
-Avoiding prop drilling
+## 1.7 useContext & Context API
 
-Creating context
+- Avoiding prop drilling
+- Context creation
+- Provider & Consumer
+- Performance considerations
 
-Providing and consuming context
-
-Performance considerations
-
-🔗 Article:
+🔗 Article  
 https://medium.com/@ro-zcn/using-usecontext-to-avoid-prop-drilling-with-react-typescript-fbb6d026f468
 
-8️⃣ Controlled Components
+---
 
-Controlled inputs
+## 1.8 Controlled Components
 
-Form handling
+- Controlled inputs
+- Form handling
+- Validation patterns
+- Controlled vs Uncontrolled components
 
-Validation patterns
+---
 
-Controlled vs Uncontrolled components
+## 1.9 Portals
 
-9️⃣ Portals
+- Rendering outside DOM hierarchy
+- Modal implementation
+- Event bubbling behavior
 
-Rendering outside DOM hierarchy
+---
 
-Modal implementation
+# 🧩 2. Component Composition
 
-Event bubbling behavior
+## 2.1 Composition Principles
 
-🧩 PART 2 — Component Composition
-🔹 Composition Principles
+- Composition over inheritance
+- Children as API
+- State placement strategies
+- Presentational vs Container pattern
+- Eliminating Context via Custom Hooks
 
-Composition over inheritance
+## 2.2 Advanced Composition APIs
 
-Children as API
+- React.Children
+- React.cloneElement
+- Compound Component pattern
+- Headless component pattern
 
-State placement strategies
+---
 
-Presentational vs Container pattern
+# 🔁 3. Render Props Pattern
 
-Healthy composition with Context
+## 3.1 Render Props & Render Functions
 
-Eliminating Context via Custom Hooks
+- Functions as children
+- Logic sharing
+- Flexible APIs
+- Nested render issues
 
-🔹 Advanced Composition APIs
+## 3.2 Practical Example
 
-React.Children
+- To-Do list implementation
+- Validation & optimization
+- Performance considerations
 
-React.cloneElement
+---
 
-Compound Component pattern
+# 🏗 4. Higher Order Components (HOC)
 
-Headless component pattern
+## 4.1 Foundations
 
-🔁 PART 3 — Render Props Pattern
-Render Props & Render Functions
+- Higher-order functions
+- HOC structure
+- Props proxy pattern
+- Component wrapping
 
-Functions as children
+## 4.2 Real Use Cases
 
-Logic sharing
+- LocalStorage synchronization
+- Storage event listeners
+- Cross-tab state synchronization
+- Validation logic
 
-Flexible APIs
+## 4.3 Migration
 
-Nested render problems
+- HOC → Custom Hooks
+- Render Props vs HOC vs Hooks
 
-Practical Example
+---
 
-To-Do list implementation
+# 🪝 5. React Hooks — Deep Dive
 
-Validation & optimization
+## 5.1 Core Hooks
 
-Performance considerations
+- useState
+- useEffect
+- useContext
+- useRef
+- useReducer
 
-🏗 PART 4 — Higher Order Components (HOC)
-Foundations
+## 5.2 Performance Hooks
 
-Higher-order functions in JavaScript
+- useMemo
+- useCallback
+- React.memo
 
-HOC structure
+## 5.3 Advanced Hooks (React 18+)
 
-Props proxy pattern
+- useLayoutEffect
+- useImperativeHandle
+- useDebugValue
+- useId
+- useTransition
+- useDeferredValue
+- useSyncExternalStore
 
-Wrapping components
+---
 
-Practical Use Cases
+# ⚡ 6. Performance Optimization
 
-LocalStorage synchronization
+- Re-render analysis
+- Memoization strategies
+- Avoiding unnecessary renders
+- Key stability in lists
+- Component splitting
+- Code splitting
+- React.lazy
+- Suspense
+- Error Boundaries
 
-Storage event listeners
+---
 
-Cross-tab state sync
+# 🧵 7. Concurrent React (React 18+)
 
-Validation logic
+- Concurrent rendering
+- Automatic batching
+- Transitions
+- Suspense fundamentals
+- Streaming UI concepts
 
-Migration
+---
 
-Converting HOCs to Custom Hooks
+# 🌐 8. Data Fetching & Server State
 
-Comparing HOC vs Render Props vs Hooks
+- Fetch with useEffect
+- AbortController
+- Loading & error states
+- React Query
+- SWR
+- Caching strategies
+- Server state vs UI state
 
-🪝 PART 5 — React Hooks (Deep Dive)
-Core Hooks
+---
 
-useState
+# 🧱 9. Routing
 
-useEffect
+- React Router
+- Nested routes
+- Dynamic routes
+- Protected routes
+- Route-based code splitting
 
-useContext
+---
 
-useRef
+# 🖥 10. Server Rendering & Modern Frameworks
 
-useReducer
+- SSR vs CSR
+- Hydration
+- Static generation
+- Server Components
+- Streaming rendering
+- Next.js architecture overview
 
-Performance Hooks
+---
 
-useMemo
+# 🧪 11. Testing
 
-useCallback
+- Component testing
+- Testing Custom Hooks
+- React Testing Library
+- Mocking APIs
+- Integration tests
+- Snapshot tests
 
-React.memo
+---
 
-Advanced Hooks
+# 🏛 12. Architecture & Scalability
 
-useLayoutEffect
+- Feature-based folder structure
+- Domain-driven structure
+- Separation of UI / Logic / Services
+- Clean architecture in React
+- Dependency boundaries
+- UI design patterns
 
-useImperativeHandle
+---
 
-useDebugValue
+# 🔐 13. Security & Best Practices
 
-useId
+- XSS prevention
+- Safe HTML rendering
+- Environment variables
+- Authentication patterns
+- Authorization patterns
 
-useTransition
+---
 
-useDeferredValue
+# 📂 Suggested Project Structure
 
-useSyncExternalStore
-
-⚡ PART 6 — Performance Optimization
-
-Re-render analysis
-
-Memoization strategies
-
-Avoiding unnecessary renders
-
-Key stability in lists
-
-Component splitting
-
-Code splitting
-
-React.lazy
-
-Suspense
-
-Error Boundaries
-
-🧵 PART 7 — Concurrent React (React 18+)
-
-Concurrent rendering
-
-Automatic batching
-
-Transitions
-
-Suspense fundamentals
-
-Streaming concepts
-
-🌐 PART 8 — Data Fetching & Server State
-
-Fetch with useEffect
-
-AbortController
-
-Loading & error states
-
-React Query
-
-SWR
-
-Server state vs UI state
-
-Caching strategies
-
-🧱 PART 9 — Routing
-
-React Router
-
-Nested routes
-
-Dynamic routes
-
-Protected routes
-
-Route-based code splitting
-
-🖥 PART 10 — Server Rendering & Modern Frameworks
-
-SSR vs CSR
-
-Hydration
-
-Static generation
-
-Server Components
-
-Streaming rendering
-
-Next.js architecture overview
-
-🧪 PART 11 — Testing
-
-Component testing
-
-Testing Custom Hooks
-
-React Testing Library
-
-Mocking APIs
-
-Integration tests
-
-Snapshot tests
-
-🏛 PART 12 — Architecture & Scalability
-
-Feature-based folder structure
-
-Domain-driven structure
-
-Separation of UI / Logic / Services
-
-Clean architecture in React
-
-Dependency boundaries
-
-Design patterns for UI systems
-
-🔐 PART 13 — Security & Best Practices
-
-XSS prevention
-
-Safe HTML rendering
-
-Environment variables
-
-Authentication patterns
-
-Authorization patterns
-
-📦 Suggested Folder Structure
 src/
+ 
  ├── fundamentals/
+ 
  ├── state/
+ 
  ├── hooks/
+ 
  ├── composition/
+ 
  ├── render-props/
+ 
  ├── hoc/
+ 
  ├── performance/
+ 
  ├── concurrency/
+ 
  ├── routing/
+ 
  ├── data-fetching/
+ 
  ├── testing/
+ 
  ├── architecture/
+ 
  └── advanced/
 
-🎯 Final Goal
+---
+
+# 🎯 Final Goal
 
 After completing this roadmap, you will:
 
-Understand React internals and rendering deeply
+- Understand React internals deeply
+- Master both legacy and modern patterns
+- Build scalable and optimized applications
+- Be prepared for advanced React interviews
+- Architect production-level frontend systems
 
-Master both legacy and modern patterns
-
-Write scalable and optimized applications
-
-Architect real-world frontend systems
-
-Be prepared for advanced React interviews
+---
