@@ -144,6 +144,9 @@ https://medium.com/@ro-zcn/using-usecontext-to-avoid-prop-drilling-with-react-ty
 - Presentational vs Container pattern
 - Eliminating Context via Custom Hooks
 
+🔗 Article 
+https://ro-zcn.medium.com/component-composition-in-react-76362dc5a999
+
 ## 2.2 Advanced Composition APIs
 
 - React.Children
